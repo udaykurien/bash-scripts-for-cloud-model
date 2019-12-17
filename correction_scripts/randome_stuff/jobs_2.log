@@ -1,0 +1,8 @@
+          JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS       GRES MIN_MEM NODELIST (REASON) 
+       20063513  ukurien def-yaumanko    1.30300.002  PD 1-00:00:00     2   64     (null)      1G  (Resources) 
+       20063525  ukurien def-yaumanko    1.40400.002  PD 1-00:00:00     2   64     (null)      1G  (Resources) 
+       20063577  ukurien def-yaumanko    0.30300.005  PD 1-00:00:00     2   64     (null)      1G  (Resources) 
+       20063581  ukurien def-yaumanko    1.30300.005  PD 1-00:00:00     2   64     (null)      1G  (Resources) 
+       20063594  ukurien def-yaumanko    1.50500.005  PD 1-00:00:00     2   64     (null)      1G  (Resources) 
+       20063880  ukurien def-yaumanko    1.30300.010  PD 1-00:00:00     2   64     (null)      1G  (Resources) 
+       20063887  ukurien def-yaumanko    1.30300.050  PD 1-00:00:00     2   64     (null)      1G  (Resources) 

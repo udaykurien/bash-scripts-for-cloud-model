@@ -1,0 +1,8 @@
+          JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS       GRES MIN_MEM NODELIST (REASON) 
+       19980497  ukurien def-yaumanko    1.30300.002   R   21:30:42     4   64     (null)      1G gra[709,715,727,730] (None) 
+       19980503  ukurien def-yaumanko    1.40400.002   R   21:30:42     4   64     (null)      1G gra[711,714,726,728] (None) 
+       19980510  ukurien def-yaumanko    0.30300.005   R   21:30:42     6   64     (null)      1G gra[705-706,710,719,729,732] (None) 
+       19980526  ukurien def-yaumanko    1.30300.005   R   21:30:42     3   64     (null)      1G gra[1076,1095,1104] (None) 
+       19980539  ukurien def-yaumanko    1.50500.005   R   21:30:42     4   64     (null)      1G gra[1079,1081,1087,1093] (None) 
+       19980544  ukurien def-yaumanko    1.30300.010   R   21:30:42     4   64     (null)      1G gra[1078,1082,1090,1099] (None) 
+       19980547  ukurien def-yaumanko    1.30300.050   R   21:30:42    10   64     (null)      1G gra[1077,1085,1088,1095-1096,1100-1103,1107] (None) 
