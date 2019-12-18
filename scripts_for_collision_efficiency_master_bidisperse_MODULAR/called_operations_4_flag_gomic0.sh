@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This script preps for the next model run
+# It prepares gomic1 from gomic0
 
 
 # Cloning model and output files to new directory
