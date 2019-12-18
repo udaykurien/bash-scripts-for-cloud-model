@@ -22,8 +22,8 @@ incDropSize=10
 
 # Gathering information on ratio of radii of collector (R) and collected drops (r) (should be identical to definitions in genesis.sh)
 lbrbyR=0.1
-ubrbyR=1.0
-incrbyR=0.2
+ubrbyR=0.9
+incrbyR=0.1
 
 # Defining arrays of parameters for additional runs
 # List of collector drop sizes
@@ -118,7 +118,7 @@ then
 	elif [ "$gomicFlag" == "2" ] && [ "$iHydro" == "0" ]
 	then
 	#Initiating loop to cycle through paths
-	for EDR in $edr2 $edr3 $edr4 $edr5 $edr6
+	for EDR in edr6 #$edr2 $edr3 $edr4 $edr5 $edr6
 	do
 		for (( DropSize=$lbDropSize; DropSize<=$ubDropSize;DropSize=$DropSize+$incDropSize))
 		do			
@@ -155,7 +155,7 @@ then
 elif [ "$gomicFlag" == "2" ] && [ "$iHydro" == "1" ]
 then
 	#Initiating loop to cycle through paths
-	for EDR in $edr2 $edr3 $edr4 $edr5 $edr6
+	for EDR in $edr6 #$edr2 $edr3 $edr4 $edr5 $edr6
 	do
 		for (( DropSize=$lbDropSize; DropSize<=$ubDropSize;DropSize=$DropSize+$incDropSize))
 		do			
