@@ -19,7 +19,7 @@ echo "WARNING: This script can cause CATASTROPHIC DATA LOSS if used inappropriat
 echo "It is recommended that you read the comments, within this script AND revise the script and associated subscripts before proceeding"
 echo "Should you wish to proceed please enter the following code: $key1"
 read confirmation1
-echo "Beyond this point changes will be irreversible. If you are sure that you want to continue, please enter the following code: $key2"
+echo "Beyond this point changes will be irreversible. If you are still sure that you want to continue, please enter the following code: $key2"
 read confirmation2
 
 if [ $confirmation1 -eq $key1 ] && [ $confirmation2 -eq $key2 ]
