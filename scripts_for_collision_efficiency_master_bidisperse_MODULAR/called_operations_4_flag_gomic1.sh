@@ -1,4 +1,8 @@
 #!/bin/bash			
+				
+# This script preps for the next model run
+# It prepares gomic2ihydro0 and gomic2ihydro1 from gomic1
+
 				# Cloning model and output files to new directories
 				# -------------------------------------------------
 				pathModel="$EDR/R$dropSize/R"$dropSize"r$colDropSize"
