@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script preps for the next model run
+# It prepares gomic2ihydro0 and gomic2ihydro1 for the next run
+
 # Generating path variable
 # ------------------------
 pathModel="$EDR/R$dropSize/R"$dropSize"r$colDropSize"
