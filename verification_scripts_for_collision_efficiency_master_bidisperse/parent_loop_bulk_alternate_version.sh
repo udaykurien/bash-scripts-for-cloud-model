@@ -12,14 +12,21 @@ pathBaseLog="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2/Logs/Parameter
 # Name of the log file
 # nameLogFile="R30r30-R40r40-R50r50-gomic2ihydro0-gomic2ihydro1-collision.log"
 # nameLogFile="R30-50_r30-50_rbyR0.2-0.2-1.0_edr0.002-0.050_microphysics_spinup.log"
-tempLogNo=$(ls -l $pathBaseLog/parameter_verification_log*.log | wc -l)
+tempLogNo=$(ls -l $pathBaseLog/parameter_verification_log*[0-9].log | wc -l)
 nameLogFile=parameter_verification_logs$tempLogNo.log
 
 # Final path to log file
 pathLogFile="$pathBaseLog/$nameLogFile"
 
 # Creation of log file
-touch  $pathLogFile
+if [ -f "$pathLogFile" ]
+then
+	echo "Conflict: Log file already exists!"
+	echo "Exiting script"
+	exit 1
+else
+	touch  $pathLogFile
+fi
 
 # Path to subscripts
 pathSubScripts="/home/ukurien/projects/def-yaumanko/ukurien/Github/Scripts/verification_scripts_for_collision_efficiency_master_bidisperse"
