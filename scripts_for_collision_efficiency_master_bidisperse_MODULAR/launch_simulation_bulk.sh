@@ -43,6 +43,7 @@ read gomicFlag
 echo 'Please specify ihydro flag for this instance of the simulation (0/1)'
 read iHydro
 
+# Options for choiceAdditionalSim (y/n)
 choiceAdditionalSim="n"
 
         
@@ -118,7 +119,7 @@ then
 	elif [ "$gomicFlag" == "2" ] && [ "$iHydro" == "0" ]
 	then
 	#Initiating loop to cycle through paths
-	for EDR in edr6 #$edr2 $edr3 $edr4 $edr5 $edr6
+	for EDR in $edr6 #$edr2 $edr3 $edr4 $edr5 $edr6
 	do
 		for (( DropSize=$lbDropSize; DropSize<=$ubDropSize;DropSize=$DropSize+$incDropSize))
 		do			
@@ -155,7 +156,7 @@ then
 elif [ "$gomicFlag" == "2" ] && [ "$iHydro" == "1" ]
 then
 	#Initiating loop to cycle through paths
-	for EDR in $edr6 #$edr2 $edr3 $edr4 $edr5 $edr6
+	for EDR in $edr6 # $edr6 #$edr2 $edr3 $edr4 $edr5 $edr6
 	do
 		for (( DropSize=$lbDropSize; DropSize<=$ubDropSize;DropSize=$DropSize+$incDropSize))
 		do			
