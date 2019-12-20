@@ -7,7 +7,7 @@
 pathBaseSimulation="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2"
 
 # Path to base log directory
-pathBaseLog="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2/Logs/Bidisp_R304050_rbyR1to9_collision_logs"
+pathBaseLog="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2/Logs/Collision_Logs/Bidisp_R304050_rbyR1to9_collision_logs"
 
 # Name of the log file
 # nameLogFile="R30r30-R40r40-R50r50-gomic2ihydro0-gomic2ihydro1-collision.log"
