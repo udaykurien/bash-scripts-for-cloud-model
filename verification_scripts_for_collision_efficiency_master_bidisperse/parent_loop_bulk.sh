@@ -12,8 +12,8 @@ pathBaseLog="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2/Logs/Collision
 # Name of the log file
 # nameLogFile="R30r30-R40r40-R50r50-gomic2ihydro0-gomic2ihydro1-collision.log"
 # nameLogFile="R30-50_r30-50_rbyR0.2-0.2-1.0_edr0.002-0.050_microphysics_spinup.log"
-tempLogNo=$(ls -l $pathBaseLog/tempLogColBulk_bidisp_R304050_rbyR1to9__No*.log | wc -l)
-nameLogFile=tempLogColBulk_bidisp_R304050_rbyR1to9__No$tempLogNo.log
+tempLogNo=$(ls -l $pathBaseLog/tempLogColBulk_bidisp_R304050_rbyR1to9_No*.log | wc -l)
+nameLogFile=tempLogColBulk_bidisp_R304050_rbyR1to9_No$tempLogNo.log
 
 # Final path to log file
 pathLogFile="$pathBaseLog/$nameLogFile"
@@ -33,9 +33,9 @@ dropSizeLB=30
 dropSizeUB=50
 dropSizeInc=10
 
-lbrbyR=1.0
-ubrbyR=1.0
-rbyRInc=0.2
+lbrbyR=0.1
+ubrbyR=0.9
+rbyRInc=0.1
 
 edr1=0.000
 edr2=0.002
@@ -56,7 +56,7 @@ echo "--------------" >> $pathLogFile
 
 printf "%-5s %-8s %-8s %-8s %-7s %-9s %-13s %-7s %-8s %-7s %-10s\n" "SNo" "R" "r" "TND" "EDR" "nstop" "Wall" "Gomic" "iHydro" "Col." "Run time" >> $pathLogFile
 
-for EDR in $edr2 $edr3 $edr4 $edr5 $edr6
+for EDR in  $edr6 # $edr2 $edr3 $edr4 $edr5 $edr6
 do
 	for (( dropSize=$dropSizeLB; dropSize<=$dropSizeUB; dropSize=$dropSize+$dropSizeInc ))
 	do

@@ -119,7 +119,7 @@ then
 elif [ $gomicFlag -eq 2 ]
 then
 	# Initiating loops to cycle through paths
-	for EDR in $edr2 $edr3 $edr4 $edr5 $edr6
+	for EDR in $edr6 # $edr2 $edr3 $edr4 $edr5 $edr6
 	do
 		for (( dropSize=$dropSizeLB; dropSize<=$dropSizeUB; dropSize=$dropSize+$dropSizeInc))
 		do
