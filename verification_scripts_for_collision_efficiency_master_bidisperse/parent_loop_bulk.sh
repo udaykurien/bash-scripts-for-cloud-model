@@ -7,13 +7,13 @@
 pathBaseSimulation="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2"
 
 # Path to base log directory
-pathBaseLog="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2/Logs"
+pathBaseLog="/home/ukurien/projects/def-yaumanko/ukurien/Clones_2/Logs/Bidisp_R304050_rbyR1to9_collision_logs"
 
 # Name of the log file
 # nameLogFile="R30r30-R40r40-R50r50-gomic2ihydro0-gomic2ihydro1-collision.log"
 # nameLogFile="R30-50_r30-50_rbyR0.2-0.2-1.0_edr0.002-0.050_microphysics_spinup.log"
-tempLogNo=$(ls -l $pathBaseLog/tempLogColBulk_No*.log | wc -l)
-nameLogFile=tempLogColBulk_No$tempLogNo.log
+tempLogNo=$(ls -l $pathBaseLog/tempLogColBulk_bidisp_R304050_rbyR1to9__No*.log | wc -l)
+nameLogFile=tempLogColBulk_bidisp_R304050_rbyR1to9__No$tempLogNo.log
 
 # Final path to log file
 pathLogFile="$pathBaseLog/$nameLogFile"
